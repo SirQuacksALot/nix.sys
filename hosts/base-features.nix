@@ -25,12 +25,12 @@ in
     LC_TIME           = locale;
   };
 
-  services.xerver.xkb = {
+  services.xserver.xkb = {
     layout  = key_layout;
     variant = key_variant;
   };
 
-  console.keyMap = kay_layout;
+  console.keyMap = key_layout;
 
 
   # ---------------[ Basic Packaes ]------------------
