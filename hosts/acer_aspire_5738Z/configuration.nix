@@ -9,6 +9,8 @@
     [ # Include the results of the hardware scan.
       ../base-features.nix
       ./hardware-configuration.nix
+      ../../environments/desktop/base
+      ../../environments/dekstop/hyprland
     ];
 
   # Experimental Features
