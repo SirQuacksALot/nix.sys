@@ -10,7 +10,7 @@
       ../base-features.nix
       ./hardware-configuration.nix
       ../../environments/desktops/base
-      ../../environments/dekstops/hyprland
+      ../../environments/desktops/hyprland
     ];
 
   # Experimental Features
