@@ -11,8 +11,9 @@
   # ------------[ System Outputs ]-------------
   outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, nixos-hardware, home-manager, ... }: let
     # --------[ Basic definitions ]------------
-    system = "x86_64-linux";
-    host = "acer_aspire_5738Z";
+    system   = "x86_64-linux";
+    host     = "acer_aspire_5738Z";
+    username = "sebastian";
 
     # -----[ Package Manager definition ]------
     pkgs = import nixpkgs { 
@@ -29,7 +30,7 @@
   in {
     # ---------------[ System ]---------------- 
     nixosConfigurations.${host} = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit system home-manager; };
+      specialArgs = { inherit system home-manager username host; };
       modules = [ ./hosts/${host}/configuration.nix ];
     };        
 
