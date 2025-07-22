@@ -12,6 +12,8 @@
       specialArgs = { inherit system; };
       modules = [
         ./hosts/acer_aspire_5738Z/configuration.nix
+        ./environments/desktops/base
+        ./environments/desktops/hyprland
       ];
     };        
 
