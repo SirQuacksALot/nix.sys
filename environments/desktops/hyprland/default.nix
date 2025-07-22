@@ -2,6 +2,6 @@
 
 {
   imports = [
-    ./home/home.nix  
+    ./config.nix
   ];
 }
