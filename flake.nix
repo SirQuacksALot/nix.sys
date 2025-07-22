@@ -8,7 +8,7 @@
     pkgs = import nixpkgs { inherit system; };
   in {
     # --------------[ .Systems ]-------------
-    nixosConfiurations.acerAspire5738Z = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.acerAspire5738Z = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit system; };
       modules = [
         ./hosts/acer_aspire_5738Z/configuration.nix
